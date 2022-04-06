@@ -12,12 +12,12 @@ bg_bar_color="#000000"
 # @params {string} $2 background color, ex: "#FF0000"  
 separator() {
   echo -n "{"
-  echo -n "\"full_text\":\"\"," # CTRL+Ue0b2
+  echo -n "\"full_text\":\"\"," # CTRL+Ue0b2
   echo -n "\"separator\":false,"
   echo -n "\"separator_block_width\":0,"
   echo -n "\"border\":\"$bg_bar_color\","
   echo -n "\"border_left\":0,"
-  echo -n "\"border_right\":0,"
+  echo -n "\"border_right\":-1,"
   echo -n "\"border_top\":2,"
   echo -n "\"border_bottom\":2,"
   echo -n "\"color\":\"$1\","
