@@ -66,6 +66,8 @@ keys = [
     #---    Browser     ---#
     Key([mod], "b", lazy.spawn("firefox")),
 
+    Key([mod], "e", lazy.spawn("pcmanfm")),
+
     #---    Terminal    ---#
     Key([mod], "Return", lazy.spawn("alacritty")),
 
@@ -124,9 +126,19 @@ keys = [
 #   WORKSPACES  #
 #---------------#
 
-groups = [Group(i) for i in [
+"""groups = [Group(i) for i in [
     "   ", "   ", "   ", "   ", "   ", "   ", "   ", "      ",
-]]
+]]"""
+groups[
+	Group(" ", label="", matches=[Match(wm_class='firefox')], layout=''),
+	Group(" ", label="", matches=[Match(wm_class='alacritty')], layout=''),
+	Group(" ", label="", matches=[Match(wm_class='alacritty')], layout=''),
+	Group(" ", label="", matches=[Match(wm_class='alacritty')], layout=''),
+	Group(" ", label="", matches=[Match(wm_class='alacritty')], layout=''),
+	Group(" ", label="", matches=[Match(wm_class='alacritty')], layout=''),
+	Group(" ", label="", matches=[Match(wm_class='alacritty')], layout=''),
+	Group(" ", label="", matches=[Match(wm_class='alacritty')], layout='')
+]
 
 for i, group in enumerate(groups):
     actual_key = str(i + 1)
