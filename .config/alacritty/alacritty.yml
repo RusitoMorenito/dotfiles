@@ -5,7 +5,7 @@ env:
 window:
   dimensions:
     columns: 80
-    lines: 24
+    lines: 24 
 
   padding:
     x: 10
@@ -25,22 +25,22 @@ scrolling:
 
 font:
   normal:
-    family: Hack
+    family: Hack Nerd Font
     style: Regular
 
   bold:
-    family: Hack
+    family: Hack Nerd Font
     style: Bold
 
   italic:
-    family: Hack
+    family: Hack Nerd Font
     style: Italic
 
   bold_italic:
-    family: Hack
+    family: Hack Nerd Font
     style: Bold Italic
 
-  size: 9.5
+  size: 11.5
 
   offset:
     x: 0
@@ -90,7 +90,6 @@ bell:
   duration: 0
   color: '#ffffff'
 
-window.opacity: 2.0
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
