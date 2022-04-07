@@ -37,7 +37,7 @@ keys = [
     Key([mod], "l", lazy.layout.right()),
     Key([mod], "j", lazy.layout.down()),
     Key([mod], "k", lazy.layout.up()),
-    Key([mod], "p", lazy.layout.next()),
+    Key([mod], "d", lazy.layout.next()),
 
     #---    Move windows    ---#
     Key([mod, "shift"], "h", lazy.layout.shuffle_left()),
@@ -129,15 +129,15 @@ keys = [
 """groups = [Group(i) for i in [
     "   ", "   ", "   ", "   ", "   ", "   ", "   ", "      ",
 ]]"""
-groups[
-	Group(" ", label="", matches=[Match(wm_class='firefox')], layout=''),
-	Group(" ", label="", matches=[Match(wm_class='alacritty')], layout=''),
-	Group(" ", label="", matches=[Match(wm_class='alacritty')], layout=''),
-	Group(" ", label="", matches=[Match(wm_class='alacritty')], layout=''),
-	Group(" ", label="", matches=[Match(wm_class='alacritty')], layout=''),
-	Group(" ", label="", matches=[Match(wm_class='alacritty')], layout=''),
-	Group(" ", label="", matches=[Match(wm_class='alacritty')], layout=''),
-	Group(" ", label="", matches=[Match(wm_class='alacritty')], layout='')
+groups = [
+	Group("1", label="   ", matches=[Match(wm_class='firefox')]),
+	Group("2", label="   ", matches=[Match(wm_class='Alacritty')]),
+	Group("3", label="   ", matches=[Match(wm_class='gedit'), Match(wm_class='Code')]),
+	Group("4", label="   "),
+	Group("5", label="   ", matches=[Match(wm_class='discord'), Match(wm_class='TelegramDesktop')]),
+	Group("6", label="   "),
+	Group("7", label="   "),
+	Group("8", label="    ", matches=[Match(wm_class='Tor Browser'), Match(wm_class='Falkon')])
 ]
 
 for i, group in enumerate(groups):
