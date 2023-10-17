@@ -1,4 +1,4 @@
-Mine Dotfiles UwU
+Mine Dotfiles
 
 My Bar:
 ![image](https://user-images.githubusercontent.com/93195319/161822365-f791de7a-60a5-44f4-8f7a-4c4988cc1752.png)
